@@ -1,7 +1,7 @@
 {
     "name": "bugcat/tools",
     "description": "PHP  laravel packages",
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
