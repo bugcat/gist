@@ -1,0 +1,19 @@
+{
+    "name": "bugcat/tools",
+    "description": "PHP  laravel packages",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bugcat",
+            "email": "i@bug.cat"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bugcat\\Tools\\": "src/"
+        }
+    }
+}
