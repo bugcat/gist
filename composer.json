@@ -14,6 +14,10 @@
     "autoload": {
         "psr-4": {
             "Bugcat\\Tools\\": "src/"
-        }
+        },
+        "files": [
+            "src/PHP/Helpers/redefinitions.php",
+            "src/Laravel/Helpers/functions.php"
+        ]
     }
 }

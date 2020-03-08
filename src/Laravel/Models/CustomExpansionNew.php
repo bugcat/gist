@@ -12,11 +12,7 @@ trait CustomExpansionNew
      */
     public function add($data = [])
     {
-        foreach ( $data as $key => $value ) {
-            $this->$key = $value;
-        }
-        $this->save();
-        return $this->id;
+        return $this->upd($data, 'id');
     }
     
     /**
