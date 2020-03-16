@@ -1,0 +1,59 @@
+/* 
+<375px            Mobile S   => 320px
+>=375px           Mobile M   => 360px
+>=425px           Mobile L   => 400px
+<576px   .col-    ExtraSmall => 400px
+>=576px  .col-sm- Small      => 540px
+>=768px  .col-md- Medium     => 720px
+>=992px  .col-lg- Large      => 960px
+>=1200px .col-xl- ExtraLarge => 1024px
+>=1400px                     => 1280px
+>=1800px                     => 1600px
+*/
+
+
+/*<375px  Mobile S  => 320px*/
+@media (max-width: 374px) {
+  #app {width:320px;}
+}
+
+/*>=375px  Mobile M  => 360px*/
+@media (min-width: 375px) {
+  #app {width:360px;}
+}
+
+/*>=425px  Mobile L  => 400px*/
+/*<576px  .col-  ExtraSmall  */
+@media (min-width: 425px) {
+  #app {width:400px;}
+}
+
+/*>=576px  .col-sm- Small  => 540px*/
+@media (min-width: 576px) {
+  #app {width:540px;}
+}
+
+/*>=768px  .col-md- Medium  => 720px*/
+@media (min-width: 768px) {
+  #app {width:720px;}
+}
+
+/*>=992px  .col-lg- Large  => 960px*/
+@media (min-width: 992px) {
+  #app {width:960px;}
+}
+
+/*>=1200px  .col-xl- ExtraLarge  => 1024px*/
+@media (min-width: 1200px) {
+  #app {width:1024px;}
+}
+
+/*>=1400px  => 1280px*/
+@media (min-width: 1400px) {
+  #app {width:1280px;}
+}
+
+/*>=1800px  => 1600px*/
+@media (min-width: 1800px) {
+  #app {width:1600px;}
+}
