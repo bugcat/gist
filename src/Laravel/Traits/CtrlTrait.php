@@ -1,7 +1,7 @@
-<?php namespace Bugcat\Tools\Laravel\Traits;
+<?php namespace Bugcat\Gist\Laravel\Traits;
 
-use Bugcat\Tools\Laravel\Models\InstModel;
-use Bugcat\Tools\Laravel\Helpers\Sttc;
+use Bugcat\Gist\Laravel\Models\InstModel;
+use Bugcat\Gist\Laravel\Helpers\Sttc;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Request;
 

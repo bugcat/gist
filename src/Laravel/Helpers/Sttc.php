@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\Laravel\Helpers;
+<?php namespace Bugcat\Gist\Laravel\Helpers;
 
 use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Support\Facades\{DB, Route};

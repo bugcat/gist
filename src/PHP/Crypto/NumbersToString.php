@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\PHP\Crypto;
+<?php namespace Bugcat\Gist\PHP\Crypto;
 
 //數字組編碼成字符串
 class NumbersToString

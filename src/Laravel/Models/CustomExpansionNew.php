@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\Laravel\Models;
+<?php namespace Bugcat\Gist\Laravel\Models;
 
 //新增的扩展
 trait CustomExpansionNew

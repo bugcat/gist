@@ -1,4 +1,4 @@
-<?php namespace App\Admin\Controllers;
+<?php namespace Bugcat\Gist\Laravel\Ctrls;
 
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\{Form, Grid, Show, Admin};

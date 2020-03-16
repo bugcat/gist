@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\Laravel\Traits;
+<?php namespace Bugcat\Gist\Laravel\Traits;
 
 use Illuminate\Hashing\BcryptHasher as Hasher;
 use Illuminate\Support\Facades\Validator;

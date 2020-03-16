@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\Laravel\Models;
+<?php namespace Bugcat\Gist\Laravel\Models;
 
 //复写的扩展
 trait CustomExpansionRewrite

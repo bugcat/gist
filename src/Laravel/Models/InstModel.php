@@ -1,4 +1,4 @@
-<?php namespace Bugcat\Tools\Laravel\Models;
+<?php namespace Bugcat\Gist\Laravel\Models;
 
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
@@ -26,7 +26,7 @@ class InstModel
             //当为用户表时 直接返回用户类
             return new \App\User();
         } else {
-            $mobj = 'Bugcat\Tools\Laravel\Models\BaseModel'; //默认模型
+            $mobj = 'Bugcat\Gist\Laravel\Models\BaseModel'; //默认模型
             //判断表名
             $arr = explode('.', $table);
             if ( isset($arr[1]) ) {

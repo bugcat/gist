@@ -1,6 +1,6 @@
 {
-    "name": "bugcat/tools",
-    "description": "PHP  laravel packages",
+    "name": "bugcat/gist",
+    "description": "a gist for PHP, laravel packages, and so on.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Bugcat\\Tools\\": "src/"
+            "Bugcat\\Gist\\": "src/"
         },
         "files": [
             "src/PHP/Helpers/redefinitions.php",
