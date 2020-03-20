@@ -83,7 +83,7 @@ trait CaptchaTrait
      *
      * @return void
      */
-    private function showCaptcha($from = '', $rand = 0)
+    private function showCaptcha($from = '')
     {
         $key = $this->__getCaptchaSessionKey($from);
         return $this->__textCaptcha($key);
@@ -121,8 +121,10 @@ trait CaptchaTrait
         $vcode = $sensitive ? $vcode : Str::lower($vcode);
         //存储验证码
         $hasher = new Hasher;
+        $session = session();
         $hash = $hasher->make($vcode);
-        session([$key => $hash]);
+        $session->put($key, $hash);
+        $session->save();
         //输出验证码
         $captcha->img();
         exit;
@@ -169,18 +171,19 @@ trait CaptchaTrait
     private final function __takeCheckCaptcha($args, $skey)
     {
         $bool = true;
+        $hasher = new Hasher;
+        $session = session();
         list($attribute, $value, $fail) = $args;
-        
-        if ( empty($skey) || ! session()->has($skey) ) {
+        if ( empty($skey) || ! $session->has($skey) ) {
             $bool = false;
         } else {
-            $vcode = session()->get($skey);
+            $vcode = $session->get($skey);
             $sensitive = $this->getCaptchaCfg('sensitive');
             $value = $sensitive ? $value : Str::lower($value);
-            $res = Hasher::check($value, $vcode);
+            $res = $hasher->check($value, $vcode);
             //  if verify pass,remove session
             if ( $res ) {
-                session()->remove($skey);
+                $session->remove($skey);
             }
             $bool = $res;
         }

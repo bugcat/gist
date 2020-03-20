@@ -1,16 +1,17 @@
-# tools
+# Gist
 自用开发工具  PHP  laravel packages
 
 
+composer create-project --prefer-dist laravel/laravel laravel6 "6.*"
 
 ```
 "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/bugcat/tools"
+        "url": "https://github.com/bugcat/gist"
     }
 ],
 "require": {
-    "bugcat/tools": "dev-master"
+    "bugcat/gist": "dev-master"
 },
 ```
