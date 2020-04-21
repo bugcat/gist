@@ -147,7 +147,7 @@ trait CaptchaTrait
             key($info) => ['bail', 'required', 'string', function() use ($from) {
                 //判断环境
                 $envs = $this->getCaptchaCfg('envs_ignored');
-                if ( in_array(config('app.env'), $envs) ) {var_dump('test1');
+                if ( in_array(config('app.env'), $envs) ) {
                     return true;
                 }
                 //获取session键

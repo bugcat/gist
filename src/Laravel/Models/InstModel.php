@@ -59,7 +59,7 @@ class InstModel
             //开始加载模型
             $m = new $mobj();
             if ( method_exists($m, '__init__') ) {
-                $set['table'] = $table;
+                $set['table'] = $t;
                 $m->__init__($set);
             }
             return $m;
