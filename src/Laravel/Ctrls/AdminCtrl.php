@@ -2,7 +2,7 @@
 
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\{Form, Grid, Show, Admin};
-use Bugcat\Tools\Laravel\Traits\CtrlTrait;
+use Bugcat\Gist\Laravel\Traits\CtrlTrait;
 
 class AdminCtrl extends AdminController
 {
