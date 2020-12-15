@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 
 trait CtrlTrait
 {
-    
+
     /**
      * Where to redirect users after registration.
      *
      * @var array
      */
     protected $vdata = [];
-    
-    
+
+
     /**
      * 通用模型
      *
@@ -27,7 +27,7 @@ trait CtrlTrait
     {
         return InstModel::init($table, $set);
     }
-    
+
     /**
      * 缓存
      *
@@ -38,7 +38,7 @@ trait CtrlTrait
     {
         return Cache::store($store);
     }
-    
+
     /**
      * 请求
      *
@@ -49,7 +49,7 @@ trait CtrlTrait
     {
         return $request;
     }
-    
+
     /**
      * 设置视图变量的值
      *
@@ -65,7 +65,7 @@ trait CtrlTrait
             $this->vdata[$key] = $value;
         }
     }
-    
+
     /**
      * 输出视图
      *
@@ -75,4 +75,5 @@ trait CtrlTrait
     {
         return Sttc::view($vpath, $this->vdata, $mergeData);
     }
+
 }

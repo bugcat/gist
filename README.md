@@ -12,6 +12,6 @@ composer create-project --prefer-dist laravel/laravel laravel6 "6.*"
     }
 ],
 "require": {
-    "bugcat/gist": "dev-master"
+    "bugcat/gist": "^1.0"
 },
 ```

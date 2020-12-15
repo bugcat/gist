@@ -7,18 +7,19 @@ use Bugcat\Gist\Laravel\Traits\CtrlTrait;
 class DcatCtrl extends AdminController
 {
     use CtrlTrait;
-    
+
     /**
      * Title for current resource.
      *
      * @var string
      */
     protected $title = 'Example controller';
-    
+
     protected $table = null; //数据库表名
     protected $model = null; //模型对象
-    
-    
+    protected $user  = null; //当前用户对象
+
+
     /**
      * Create a new controller instance.
      *
@@ -30,8 +31,9 @@ class DcatCtrl extends AdminController
         if ( ! empty($this->table) ) {
             $this->model = $this->m($this->table);
         }
+        $this->user = Admin::user();
     }
-    
+
     /**
      * Make a grid builder.
      *
@@ -80,16 +82,17 @@ class DcatCtrl extends AdminController
 
         return $form;
     }
-    
+
     //执行JS
     protected function js($script = '')
     {
         Admin::script($script);
     }
-    
+
     //执行Css
     protected function css($style = '')
     {
         Admin::style($style);
     }
+
 }
