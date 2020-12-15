@@ -96,7 +96,7 @@ class AdminCtrl extends AdminController
     //获取当前用户对象
     protected function user()
     {
-        Admin::user();
+        return Admin::user();
     }
 
 }
