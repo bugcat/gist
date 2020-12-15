@@ -17,7 +17,6 @@ class DcatCtrl extends AdminController
 
     protected $table = null; //数据库表名
     protected $model = null; //模型对象
-    protected $user  = null; //当前用户对象
 
 
     /**
@@ -31,7 +30,6 @@ class DcatCtrl extends AdminController
         if ( ! empty($this->table) ) {
             $this->model = $this->m($this->table);
         }
-        $this->user = Admin::user();
     }
 
     /**
@@ -93,6 +91,12 @@ class DcatCtrl extends AdminController
     protected function css($style = '')
     {
         Admin::style($style);
+    }
+
+    //获取当前用户对象
+    protected function user()
+    {
+        Admin::user();
     }
 
 }
